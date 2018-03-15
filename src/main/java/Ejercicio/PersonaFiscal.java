@@ -55,6 +55,6 @@ public class PersonaFiscal {
 	}
 
 	public void setSueldo(int _sueldo) {
-		this.sueldo = _sueldo;
+		this.sueldo = _sueldo;// nn
 	}
 }
