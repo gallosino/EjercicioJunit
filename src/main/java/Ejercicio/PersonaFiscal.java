@@ -15,10 +15,9 @@ public class PersonaFiscal {
 	public int calcularImpuesto() {
 		int impuesto = 0;
 		if (this.edad < 30) {
-			this.tipo.getPorcentaje30();
-
+			impuesto = this.sueldo * this.tipo.getPorcentaje30() / 100;
 		} else if (this.edad >= 30) {
-			this.tipo.getPorcentaje();
+			impuesto = this.sueldo * this.tipo.getPorcentaje() / 100;
 		}
 		return impuesto;
 	}
@@ -39,23 +38,23 @@ public class PersonaFiscal {
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String _nombre) {
+		this.nombre = _nombre;
 	}
 
 	public int getEdad() {
 		return this.edad;
 	}
 
-	public void setEdad(int edad) {
-		this.edad = edad;
+	public void setEdad(int _edad) {
+		this.edad = _edad;
 	}
 
 	public int getSueldo() {
 		return this.sueldo;
 	}
 
-	public void setSueldo(int sueldo) {
-		this.sueldo = sueldo;
+	public void setSueldo(int _sueldo) {
+		this.sueldo = _sueldo;
 	}
 }
